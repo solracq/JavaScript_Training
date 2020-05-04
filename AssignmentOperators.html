@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>"Orion"</title>
+	</head>
+	
+	<body>
+		<input type = "button" onclick = "orion()" value = "penthagama" />
+		<script type = "text/javascript">
+			function orion(){
+				alert("O R I O N!")
+			}
+			
+			var a = 33;
+			var b = 10;
+			var linebreak = "<br />";
+			
+			document.write(linebreak)
+			document.write("a = ");
+			document.write(a)
+			document.write(linebreak)
+			document.write("b = ");
+			document.write(b);
+			document.write(linebreak);
+			
+			document.write("Value of a => (a = b) => ");
+			result = (a = b);
+			document.write(result);
+			document.write(linebreak);
+			
+			document.write("Value of a => (a += b) => ");
+			result = (a += b);
+			document.write(result);
+			document.write(linebreak);
+			
+			document.write("Value of a => (a -= b) => ");
+			result = !(a -= b);
+			document.write(result);
+			document.write(linebreak);
+			
+			document.write("Value of a => (a *= b) => ");
+			result = !(a *= b);
+			document.write(result);
+			document.write(linebreak);
+
+			document.write("Value of a => (a /= b) => ");
+			result = !(a /= b);
+			document.write(result);
+			document.write(linebreak);
+			
+			document.write("Value of a => (a %= b) => ");
+			result = !(a %= b);
+			document.write(result);
+			document.write(linebreak);
+		</script>
+	
+		<p>"Set the variables to different values and different operators and then try..."</p>
+	</body>
+</html>

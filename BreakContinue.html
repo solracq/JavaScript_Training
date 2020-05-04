@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Title</title>
+	</head>
+
+	<body>
+		<input type = "button" onclick = "orion()" value = "Test here"/>
+		<script type = "text/javascript">
+			function orion(){
+				alert("movies")
+			}
+			
+			var x = 0;
+			document.write("Entering the loop<br />");
+			
+			while (x < 20){
+				x++;
+				if (x == 13){
+					document.write("SKIPPED!<br />")
+					continue;
+				}
+				if (x == 15){
+					break;
+				}
+				document.write(x + "<br />");
+			}
+		</script>
+	
+		<p>Set the variable to different value and then try.../p>
+	</body>
+</html>

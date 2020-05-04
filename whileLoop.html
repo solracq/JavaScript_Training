@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Orion</title>
+	</head>
+	
+	<body>
+		<input type = "button" onclick = orion() value = "Klick"/>
+		<script>
+			function orion(){
+				alert("shazam!")
+			}
+			
+			var count = 0;
+			document.write("<br />Starting Loop");
+			
+			while (count < 10){
+				document.write("<br />Current Count : " + count + "<br />");
+				count++;
+			}
+			
+			document.write("Loop Stopped!");
+			
+			var count = 0;
+			document.write("<br />Starting Second Loop<br />");
+			
+			do{
+				document.write("Current Second Count: " + count + "<br />");
+				count++;
+			} while (count < 10);
+			
+			document.write("<br />Second Loop Stopped!<br />");
+		</script>
+		
+		<p>Set the variable to different value and then try...</p>
+	</body>
+</html>

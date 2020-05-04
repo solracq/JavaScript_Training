@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CAMELIT</title>
+	</head>
+	
+	<body>
+		<input type = "button" onclick = "orion()" value = "Test" />
+		<script type = "text/javascript">
+			function orion(){
+				alert("AutoMovil")
+			}
+			
+			var count;
+			document.write("<br />Strarting Loop<br />");
+			
+			for (count = 0; count < 10; count++){
+				document.write("<br />Count Value is " + count + "<br />");
+			}
+			document.write("Loop Stoped!");
+			
+			document.write("<br />New Loop<br />");
+			var array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+			document.write("<br />Array: " + array + "<br />");
+			for (element in array){
+				document.write("<br />Element: " + element + "<br />");
+			}
+			
+			document.write("Loop Stopped!");
+			
+			var aProperty;
+			document.write("<br />Navigator Object Properties<br />");
+			for (aProperty in navigator){
+				document.write("<br \>" + aProperty + "<br \>");
+			}
+			document.write("Loop Stopped!")
+		</script>
+		
+		<p>Set the variable to different value and then try..<p/>
+	</body>
+</html>

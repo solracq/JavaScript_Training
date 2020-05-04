@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Functions</title>
+		<script type = "text/javascript">
+			function orion(name, age){
+				document.write(name + " is " + age + " years old.");
+			}
+			
+			function concatenate(first, last){
+				var full;
+				full = first + " " + last;
+				return full;
+			}
+			
+			function fullName(){
+				var result;
+				result = concatenate('Leo', 'Plm');
+				document.write(result)
+			}
+			
+			function hypotenuse(a, b){
+				function square(x){
+					return x*x;
+				}
+				return Math.sqrt(square(a) + square(b));
+			}
+			
+			function calculation(){
+				var result;
+				result = hypotenuse(1, 2);
+				document.write(result);
+			}
+			
+			// function constructor: var variable = new Function(arg1, arg2, ..., "Function Body");
+			var func = new Function("x", "y", "return x*y;");
+			function testConstructor(){
+				var result;
+				result = func(10, 20);
+				document.write(result);
+			}
+			
+			function goBack(){
+				window.history.back();
+			}
+		</script>
+	</head>
+	
+	<body>
+		<p>Click the following button to call the function</p>
+		<form>
+			<br />
+			<button onclick = "goBack()"> Go Back </button>
+			<br />
+			<br />
+			<input type = "button" onclick = "orion('Carlitos', 5)" value = "Spiderman" >
+			<br />
+			<input type = "button" onclick = "fullName()" value = "Full Name" >
+			<br />
+			<input type = "button" onclick = "calculation()" value = "Calculation of hypotenuse">
+			<br />
+			<input type = "button" onclick = "testConstructor()" value = "Testing a Constructor">
+		</form>
+		
+		<p>Use different parameters inside the function and then try...</p>
+	<body>
+</html>
